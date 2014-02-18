@@ -4,13 +4,24 @@ var MainView = Backbone.View.extend({
 
     createTemplate: _.template($('#contact-highlight-template').text()),
 
-    initialize: function(){
-        //get the empty tag into the DOM
-        this.render();
+    events: {
+        "click": "remove"
     },
 
+    initialize: function(){
+        $('.js-main-area').html( this.el );
+
+        this.render();
+
+        this.listenTo(this.model, 'change', this.render) //if the model itself changes, this will be updated
+    },
     render: function(){
-        //actually fetch the template
-        //insert into page
+        var renderedTemplate = this.createTemplate( this.model.attributes );
+
+        this.$el.html( renderedTemplate );
+    },
+
+    featureTheContact: function(){
+        console.log('you clicked!')
     }
 })
