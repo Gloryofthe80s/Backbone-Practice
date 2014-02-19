@@ -24,5 +24,6 @@ var ListView = Backbone.View.extend({
 
     featureTheContact: function(){
         new MainView( {model: this.model} );
+        $( "body" ).animate({scrollTop: $(".contact-highlight").offset().top - 50 }, "slow");
     }
 });

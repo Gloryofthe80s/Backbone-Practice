@@ -13,6 +13,8 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #F3BADC;
+    color: #4B2B8D;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -21,11 +23,12 @@ body {
 .footer {
     padding-left: 15px;
     padding-right: 15px;
+    text-align: right;
 }
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #F23D31;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
@@ -40,7 +43,7 @@ body {
 .footer {
     padding-top: 19px;
     color: #777;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #F23D31;
 }
 
 .container-narrow > hr {
@@ -50,7 +53,8 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #F23D31;
+    background-color: #AEE6F4;
     .btn {
         font-size: 21px;
         padding: 14px 24px;
@@ -96,7 +100,7 @@ body {
 
 .list-item {
     margin-bottom: 15px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #F23D31;
 
     img {
         width: 100px;
@@ -106,4 +110,8 @@ body {
 
 .contact-highlight {
 
+    img {
+        width: 200px;
+        border-radius: 100px;
+    }
 }
