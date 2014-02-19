@@ -11,7 +11,7 @@ var data = [
         bio: "Wily resembles a stereotypical mad scientist as he schemes to take over the world, creating several robots to help him. Though Wily's schemes are stopped time and time again, this does not deter him from continually trying. Despite his old age, he believes it's never too late to find true love. Cyborgs welcome.",
         nemesis: 'Nemesis: Mega Man',
         likes: 'Enjoys: building robots, mustache grooming, lab coats',
-        avatar: 'http://static4.wikia.nocookie.net/__cb20121227053910/scratchpad/images/0/06/Dr._Wily.jpg'
+        avatar: 'http://upload.wikimedia.org/wikipedia/en/b/b5/Dr._Wily.png'
     },
     {
         name: 'Kefka',
