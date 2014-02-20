@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Date A Villain</title>
+        <title>Create A Villain</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -28,12 +28,12 @@
 
 
         <div class="container">
-            <div class="header">
-                <h3>Date A Villain.com</h3>
+            <div id="header" class="header">
+                <h3>Create A Villain.com</h3>
             </div>
 
             <div class="js-main-area jumbotron">
-                <h2>Would you date...</h2>
+                <h2>Villains Go Here</h2>
             </div>
 
             <div class="row marketing">
@@ -60,6 +60,35 @@
             <h4> <%= nemesis %> </h4>
             <h4> <%= bio %> </h4>
         </script>
+
+        <script type="text/template" id='main-menu-bar-template'>
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#theModal">
+              Make A Villain
+            </button>
+        </script>
+
+
+            <div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Make Your Villain</h4>
+                  </div>
+                  <div class="modal-body">
+                    <input type="text" class="villain-name-input form-control" placeholder="Villain Name">
+                    <input type="text" class="villain-nemesis-input form-control" placeholder="Nemesis">
+                    <input type="text" class="villain-likes-input form-control" placeholder="Things They Like">
+                    <input type="text" class="villain-bio-input form-control" placeholder="Bio">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="villainSubmit" data-dismiss="modal">Create Villain</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
 
         <!-- build:js scripts/vendor.js -->
@@ -99,6 +128,7 @@
         <script src="scripts/data.js"></script>
         <script src="scripts/contact-model.js"></script>
         <script src="scripts/list-view.js"></script>
+        <script src="scripts/main-menu-bar-view.js"></script>
         <script src="scripts/main-view.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->

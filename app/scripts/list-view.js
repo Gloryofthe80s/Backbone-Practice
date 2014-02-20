@@ -5,7 +5,7 @@ var ListView = Backbone.View.extend({
     createTemplate: _.template($('#list-item-template').text()),
 
     events: {
-      "click": "featureTheContact"
+      "click": "featureTheContact",
     },
 
     initialize: function(){
